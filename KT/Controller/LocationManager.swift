@@ -23,7 +23,7 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
 
     func startUpdatingLocation() {
         locationManager.startUpdatingLocation()
-        timer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(saveLocation), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 900, target: self, selector: #selector(saveLocation), userInfo: nil, repeats: true)
     }
 
     func stopUpdatingLocation() {

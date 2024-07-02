@@ -73,7 +73,7 @@ class ListViewController: UIViewController {
         setupUI()
         locationManager.startUpdatingLocation()
         fetchLocationData()
-        timer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(fetchLocationData), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 900, target: self, selector: #selector(fetchLocationData), userInfo: nil, repeats: true)
     }
     
     func setupUI() {
